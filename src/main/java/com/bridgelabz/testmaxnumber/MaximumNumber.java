@@ -24,4 +24,16 @@ public class MaximumNumber {
 		}
 		return z;
 	}
+
+	// UC-3 comparing three string
+	public static String maxNumber(String s1, String s2, String s3) {
+		if (s1.compareTo(s2) > 0 && s1.compareTo(s3) > 0) {
+			System.out.println("Maximum number is:" + s1);
+		} else if (s2.compareTo(s3) > 0) {
+			System.out.println("Maximum number is:" + s2);
+		} else {
+			System.out.println("Maximum number is:" + s3);
+		}
+		return s3;
+	}
 }

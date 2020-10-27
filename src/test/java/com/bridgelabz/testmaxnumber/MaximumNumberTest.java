@@ -46,4 +46,24 @@ public class MaximumNumberTest {
 		Assert.assertEquals((Float) 80.3f, result);
 	}
 
+	// TC-3.1
+	@Test
+	public void givenMaxStringAtFirstPosition_WhenProper_ShouldReturnSameNumber() {
+		String result = MaximumNumber.maxNumber("Wipro", "Bridgelabz", "Cognizant");
+		Assert.assertEquals("Wipro", result);
+	}
+
+	// TC-3.2
+	@Test
+	public void givenMaxStringAtSecondPosition_WhenProper_ShouldReturnSameNumber() {
+		String result = MaximumNumber.maxNumber("Blue", "White", "Green");
+		Assert.assertEquals("White", result);
+	}
+
+	// TC-3.3
+	@Test
+	public void givenMaxStringAtThirdPosition_WhenProper_ShouldReturnSameNumber() {
+		String result = MaximumNumber.maxNumber("Apple", "Banana", "Peach");
+		Assert.assertEquals("Peach", result);
+	}
 }
