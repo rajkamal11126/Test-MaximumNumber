@@ -4,25 +4,46 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximumNumberTest {
-	// TC-1
+	// TC-1.1
 	@Test
-	public void givenMaxNumberAtFirstPosition_WhenProper_ShouldReturnSameNumber() {
+	public void givenMaxIntegerNumberAtFirstPosition_WhenProper_ShouldReturnSameNumber() {
 		Integer result = MaximumNumber.maxNumber(45, 32, 21);
 		Assert.assertEquals((Integer) 45, result);
 	}
 
-	// TC-2
+	// TC-1.2
 	@Test
-	public void givenMaxNumberAtSecondPosition_WhenProper_ShouldReturnSameNumber() {
+	public void givenMaxIntegerNumberAtSecondPosition_WhenProper_ShouldReturnSameNumber() {
 		Integer result = MaximumNumber.maxNumber(20, 60, 21);
 		Assert.assertEquals((Integer) 60, result);
 	}
 
-	// TC-3
+	// TC-1.3
 	@Test
-	public void givenMaxNumberAtThirdPosition_WhenProper_ShouldReturnSameNumber() {
+	public void givenMaxIntegerNumberAtThirdPosition_WhenProper_ShouldReturnSameNumber() {
 		Integer result = MaximumNumber.maxNumber(60, 70, 80);
 		Assert.assertEquals((Integer) 80, result);
+	}
+
+	// TC-2.1
+	@Test
+	public void givenMaxFloatNumberAtFirstPosition_WhenProper_ShouldReturnSameNumber() {
+		Float result = MaximumNumber.maxNumber(45.5f, 32.5f, 21.5f);
+		Assert.assertEquals((Float) 45f, result);
+	}
+
+	// TC-2.2
+	@Test
+	public void givenMaxFlatNumberAtSecondPosition_WhenProper_ShouldReturnSameNumber() {
+		Float result = MaximumNumber.maxNumber(20.3f, 60.5f, 21.6f);
+		Assert.assertEquals((Float) 60.5f, result);
+	}
+
+	// TC-2.3
+	@Test
+	public void givenMaxFloatNumberAtThirdPosition_WhenProper_ShouldReturnSameNumber() {
+		Float result = MaximumNumber.maxNumber(60.1f, 70.2f, 80.3f);
+		Assert.assertEquals((Float) 80.3f, result);
 	}
 
 }
